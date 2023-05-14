@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Payment
+    </title>
+    <link rel="stylesheet" type="text/css" href="pagamenti.css">
+    <link rel="icon" type="image/x-icon" href="Img/Amongus Blue.png">
+</head>
+<body style="background-color: white;">
+    <header>
+		<div class="logo">
+			<img src="img/Amongus Rosso.png" alt="Logo">
+		</div>
+		<div class="menu-menu">
+            <select onchange="location = this.value;">
+				<option>
+                    Menu
+                </option>
+				<option value="Homepage.html">
+                    Home
+                </option>
+				<option value="compra.html">
+                    Products
+                </option>
+				<option value="pagamenti.html">
+                    Payment
+                </option>
+			</select>
+		</div>
+		<div class="menu">
+			<select onchange="window.location.href='Pagina in costruzione.html'">
+				<option value="voce1">
+                    English
+                </option>
+                <option value="voce2">
+                    Italy
+                </option>
+                <option value="voce3">
+                    Sri lankese
+                </option>
+                <option value="voce4">
+                    Spanish
+                </option>
+                <option value="voce5">
+                    German
+                </option>
+			</select>
+		</div>
+	</header>
+    <div>
+        <form>
+            <label for="nome">
+                Name
+            </label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="cognome">
+                Surname
+            </label>
+            <input type="text" id="cognome" name="cognome" required><br>
+            <label for="email">
+                Email
+            </label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="indirizzo">
+                Address
+            </label>
+            <input type="text" id="indirizzo" name="indirizzo" required><br>
+            <label for="pagamento">
+                Pay method
+            </label>
+            <select id="pagamento" name="pagamento" required>
+              <option value="">
+                Select the payment method
+            </option>
+              <option value="carta">
+                Credit card
+            </option>
+              <option value="paypal">
+                Paypal
+            </option>
+            </select><br>
+            <label for="carta">
+                Card number
+            </label>
+            <input type="text" id="carta" name="carta" required><br>
+            <input type="submit" value="BUY">
+          </form>
+    </div>
+</body>
+</html>
